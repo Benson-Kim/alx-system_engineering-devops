@@ -5,3 +5,7 @@ Add /action to the PATH. /action should be the last directory the shell looks in
 
 
 a script that counts the number of directories in the PATH environment variable
+[main 0e4082e] a script that counts the number of directories in the PATH environment variable
+ 2 files changed, 3 insertions(+)
+ create mode 100755 0x03-shell_variables_expansions/3-paths
+Task 4: a script that lists environment variables
