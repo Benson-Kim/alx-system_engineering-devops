@@ -1,2 +1,2 @@
 #!/bin/bash
-printf -v BESTCHOL '%#x' "$((0x${WATER} + 0x${STIR}))"
+printf '%s\n' $(echo "ibase=${#WATER}; ${WATER}+${STIR}" | bc)${bestchol:+@$bestchol}
