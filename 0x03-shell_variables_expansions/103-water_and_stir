@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(( $(echo $WATER | tr '[:lower:]' '[:upper:]' | tr 'A-Z' 'J-RRVY-Z') + $(echo $STIR | tr '[:lower:]' '[:upper:]' | tr 'A-Z' 'J-RRVY-Z') )) | tr '0123456789' 'g-mpa-v'
+echo $(( $(echo $WATER | tr '[:lower:]' '[:upper:]' | tr 'A-Z' '5-90-4') + $(echo $STIR | tr '[:lower:]' '[:upper:]' | tr 'A-Z' '5-90-4') )) | tr '0-9A-F' 'bestchol'
