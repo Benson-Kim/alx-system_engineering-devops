@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "ibase=water;$WATER+ibase=stir;$STIR" | bc | tr -d '\\' | xargs printf "ibase=10;%s\n" | bc | tr -d '\n'
+echo $(( $(echo $WATER | tr '[:lower:]' '[:upper:]' | tr 'A-Z' 'J-RRVY-Z') + $(echo $STIR | tr '[:lower:]' '[:upper:]' | tr 'A-Z' 'J-RRVY-Z') )) | tr '0123456789' 'g-mpa-v'
