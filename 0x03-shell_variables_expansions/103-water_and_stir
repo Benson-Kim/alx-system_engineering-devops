@@ -1,2 +1,2 @@
 #!/bin/bash
-BESTCHOL=$(echo "ibase=water; $WATER + ibase=stir; $STIR" | bc)
+echo "ibase=water;$WATER+ibase=stir;$STIR" | bc | tr -d '\\' | xargs printf "ibase=10;%s\n" | bc | tr -d '\n'
