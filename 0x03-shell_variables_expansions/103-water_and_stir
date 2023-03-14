@@ -1,2 +1,2 @@
 #!/bin/bash
-((BESTCHOL=WATER+STIR))
+printf "%s\n" "$(( $(echo "${WATER// /} ${STIR// /}" | tr 'waterstir' '012345') ))" | tr '012345' 'bestchol'
