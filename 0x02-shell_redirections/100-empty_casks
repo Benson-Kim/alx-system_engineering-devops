@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -exec du -s {} + -o -type d -exec du -s {} + | awk '$1 == 0 {print $2}'
+find . -empty | rev | cut -d -f '/' 1 | rev
